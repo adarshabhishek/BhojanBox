@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "156332018371",
+    "project_id": "bhojanbox-4e392",
+    "storage_bucket": "bhojanbox-4e392.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:156332018371:android:ac391b279680166c937076",
+        "android_client_info": {
+          "package_name": "com.example.bhojanbox"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUtKzvgYCIeNjD3yUL3no5OJ9g-M5fVtw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
