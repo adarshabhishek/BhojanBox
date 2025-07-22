@@ -42,17 +42,16 @@ fun DiningScreenContent(){
         ExploreImage()
 
         TextAbove()
-
         Spacer(modifier = Modifier.height(8.dp))
 
         CarnivalCard()
-
         Spacer(modifier = Modifier.height(8.dp))
 
         TextBelow()
-
         Spacer(modifier = Modifier.height(8.dp))
 
+        MatchCard()
+        Spacer(modifier = Modifier.height(8.dp))
     }
 }
 
@@ -187,6 +186,34 @@ fun CarnivalCard(){
                     modifier = Modifier.fillMaxSize(),
                     contentScale = ContentScale.Crop
                 )
+            }
+        }
+    }
+}
+
+@Composable
+fun MatchCard(){
+    Column(modifier = Modifier.fillMaxWidth().padding(8.dp),
+        verticalArrangement = Arrangement.Center) {
+        Card(
+            modifier = Modifier
+                .fillMaxWidth()
+                .height(135.dp)
+                .padding(0.dp),
+            shape= RoundedCornerShape(15.dp),
+            colors= CardDefaults.cardColors(
+                containerColor = Color.White
+        ),
+            elevation = CardDefaults.cardElevation(
+                defaultElevation = 8.dp
+            ),
+        ) {
+            Box(modifier = Modifier.fillMaxSize()){
+                Image(
+                    painter = painterResource(id = R.drawable.match),
+                    contentDescription = "Restaurants near me",
+                    modifier = Modifier.fillMaxSize(),
+                    contentScale = ContentScale.Crop)
             }
         }
     }
